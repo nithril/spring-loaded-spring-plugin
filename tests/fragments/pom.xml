@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>spring-loaded-spring-plugin</groupId>
+    <artifactId>tests</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>fragments</artifactId>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>step0</module>
+    <module>step1</module>
+    <module>step2</module>
+  </modules>
+
+
+
+  <dependencies>
+    <!-- Only for reactor build ordering -->
+    <dependency>
+      <groupId>spring-loaded-spring-plugin</groupId>
+      <artifactId>main</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <scope>test</scope>
+      <classifier>tests</classifier>
+    </dependency>
+  </dependencies>
+
+</project>
